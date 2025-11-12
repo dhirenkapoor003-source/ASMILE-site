@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ASMILE Dental | Implants • Restorative • Cosmetic • Periodontics • Emergency | Dundee</title>
+  <meta name="description" content="Private dentist in Dundee offering dental implants, restorative and cosmetic dentistry, periodontics and same‑day emergency care. Book online or call today." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#ffffff;--ink:#0b1220;--muted:#5c687a;--brand:#0ea5e9;--brand2:#0ea54a;--card:#f5f7fb;--ring:rgba(14,165,233,.25)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--ink);background:var(--bg);}
+    a{color:var(--brand);text-decoration:none}
+    .container{max-width:1120px;margin:0 auto;padding:0 20px}
+    header{position:sticky;top:0;background:rgba(255,255,255,.8);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid #eef1f7;z-index:50}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+    .logo{display:flex;align-items:center;gap:10px;font-weight:700}
+    .logo-badge{width:36px;height:36px;border-radius:12px;background:linear-gradient(135deg,var(--brand),#22c55e);display:grid;place-items:center;color:white;font-weight:800}
+    .nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:12px;border:1px solid #e6eaf2;background:#fff;font-weight:600;box-shadow:0 2px 0 rgba(0,0,0,.02)}
+    .btn.primary{background:var(--ink);color:#fff;border-color:var(--ink)}
+    .btn.cta{background:var(--brand);color:#fff;border-color:var(--brand)}
+    .hero{padding:72px 0 36px}
+    .hero-grid{display:grid;gap:28px;grid-template-columns:1.1fr .9fr;align-items:center}
+    .hero h1{font-size:40px;line-height:1.05;margin:0 0 12px}
+    .hero p{font-size:18px;color:var(--muted);margin:0 0 16px}
+    .pill{display:inline-flex;gap:8px;align-items:center;padding:6px 10px;border-radius:999px;background:#ecfeff;border:1px solid #cff7ff;color:#0369a1;font-weight:600;font-size:12px}
+    .panel{background:var(--card);border:1px solid #e6eaf2;border-radius:16px;padding:18px}
+    .grid-4{display:grid;gap:16px;grid-template-columns:repeat(4,1fr)}
+    .grid-3{display:grid;gap:16px;grid-template-columns:repeat(3,1fr)}
+    .grid-2{display:grid;gap:16px;grid-template-columns:repeat(2,1fr)}
+    section{padding:44px 0}
+    h2{font-size:28px;margin:0 0 14px}
+    h3{margin:0 0 8px;font-size:18px}
+    .card{background:#fff;border:1px solid #eef1f7;border-radius:16px;padding:18px;box-shadow:0 6px 20px rgba(11,18,32,.04)}
+    .muted{color:var(--muted)}
+    .badge{font-size:12px;background:#eef7ff;padding:4px 8px;border-radius:999px;border:1px solid #dbeafe;display:inline-block}
+    .hero-img{aspect-ratio:4/3;border-radius:20px;overflow:hidden;border:1px solid #e6eaf2;box-shadow:0 10px 30px rgba(0,0,0,.05)}
+    .hero-img img{width:100%;height:100%;object-fit:cover}
+    .list{display:grid;gap:8px}
+    .list li{display:flex;gap:10px;align-items:flex-start}
+    .tick{width:18px;height:18px;border-radius:6px;background:#e8fff1;border:1px solid #c8f3d1;display:grid;place-items:center}
+    .cta-bar{display:flex;gap:12px;flex-wrap:wrap}
+    .sticky-footer{position:sticky;bottom:0;background:white;border-top:1px solid #eef1f7;box-shadow:0 -6px 20px rgba(0,0,0,.04)}
+    .sticky-footer .container{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:12px 20px}
+    .disclaimer{font-size:12px;color:var(--muted)}
+    form{display:grid;gap:10px}
+    input,select,textarea{width:100%;padding:12px 14px;border-radius:12px;border:1px solid #e1e6ef;font:inherit}
+    input:focus,select:focus,textarea:focus{outline:none;box-shadow:0 0 0 6px var(--ring);border-color:var(--brand)}
+    label{font-weight:600;font-size:14px}
+    .cols{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    footer{padding:36px 0 80px;color:#6b7280}
+    .footer-grid{display:grid;gap:20px;grid-template-columns:2fr 1fr 1fr}
+    .fine{font-size:12px;color:#9aa3b2}
+    .cookie{position:fixed;inset:auto 16px 16px 16px;background:white;border:1px solid #e6eaf2;border-radius:16px;padding:16px;box-shadow:0 10px 30px rgba(0,0,0,.08);display:none}
+    .cookie.show{display:block}
+    @media (max-width:980px){.hero-grid{grid-template-columns:1fr}.grid-4{grid-template-columns:repeat(2,1fr)}.grid-3{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}.cols{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="logo"><span class="logo-badge">A</span> ASMILE Dental</div>
+      <ul>
+        <li><a href="#treatments">Treatments</a></li>
+        <li><a href="#fees">Fees</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a class="btn" href="#contact">Book online</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="pill">Private clinic • Dundee • No NHS</span>
+          <h1>Modern private dentistry in Dundee — implants, cosmetic and specialist gum care.</h1>
+          <p>We blend expert clinicians with friendly, no‑rush appointments. Same‑day emergency slots reserved daily.</p>
+          <div class="cta-bar">
+            <a class="btn cta" href="#contact">Book a free consultation</a>
+            <a class="btn" href="tel:+44-0000-000000">Call us</a>
+          </div>
+          <ul class="list" style="margin-top:16px">
+            <li><span class="tick">✓</span> Transparent fees & 0% finance options</li>
+            <li><span class="tick">✓</span> GDC‑registered dentists & specialists</li>
+            <li><span class="tick">✓</span> Digital scans • Gentle care • Clear aftercare</li>
+          </ul>
+        </div>
+        <div class="hero-img">
+          <img src="https://images.unsplash.com/photo-1588771930290-7a5b2e33b38a?q=80&w=1640&auto=format&fit=crop" alt="Modern dental practice"/>
+        </div>
+      </div>
+    </section>
+
+    <section id="treatments">
+      <div class="container">
+        <h2>Treatments</h2>
+        <div class="grid-4">
+          <div class="card">
+            <h3>Dental Implants</h3>
+            <p class="muted">Single tooth to full smile restorations. Cone‑beam planning, guided placement and natural‑looking crowns.</p>
+            <ul class="list">
+              <li><span class="tick">✓</span> Free implant suitability check</li>
+              <li><span class="tick">✓</span> Same‑day temporary teeth where suitable</li>
+              <li><span class="tick">✓</span> Finance available</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Restorative Dentistry</h3>
+            <p class="muted">White fillings, inlays/onlays and crowns to repair and protect while keeping things discreet and durable.</p>
+            <ul class="list">
+              <li><span class="tick">✓</span> Tooth‑coloured, metal‑free options</li>
+              <li><span class="tick">✓</span> Same‑day pain relief</li>
+              <li><span class="tick">✓</span> Detailed treatment plans</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Cosmetic Dentistry</h3>
+            <p class="muted">Whitening, bonding and veneer smile makeovers designed conservatively around you.</p>
+            <ul class="list">
+              <li><span class="tick">✓</span> Digital smile preview</li>
+              <li><span class="tick">✓</span> Safe, dentist‑led whitening</li>
+              <li><span class="tick">✓</span> Subtle, natural aesthetics</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Periodontics</h3>
+            <p class="muted">Specialist gum treatment to stop bleeding gums, treat periodontitis and help protect implants long‑term.</p>
+            <ul class="list">
+              <li><span class="tick">✓</span> Specialist‑led care</li>
+              <li><span class="tick">✓</span> Advanced non‑surgical therapy</li>
+              <li><span class="tick">✓</span> Maintenance programmes</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container grid-3">
+        <div class="card">
+          <span class="badge">Emergency today</span>
+          <h3>Emergency care</h3>
+          <p class="muted">Toothache, swelling, broken tooth or lost crown? We reserve urgent slots every day. Same‑day relief whenever possible.</p>
+        </div>
+        <div class="card">
+          <span class="badge">Why us</span>
+          <h3>Comfort + clarity</h3>
+          <p class="muted">We explain options clearly, quote before treatment and never rush appointments.</p>
+        </div>
+        <div class="card">
+          <span class="badge">Location</span>
+          <h3>Dundee city centre</h3>
+          <p class="muted">123 Sample Street, Dundee DD1 1AA • Free parking nearby • Accessible</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="fees">
+      <div class="container grid-2">
+        <div>
+          <h2>Guide fees</h2>
+          <div class="panel">
+            <ul class="list">
+              <li><span class="tick">£60</span> New patient exam (incl. X‑rays)</li>
+              <li><span class="tick">£350</span> Whitening (both arches)</li>
+              <li><span class="tick">from £495</span> Crowns</li>
+              <li><span class="tick">from £2,200</span> Dental implant (incl. crown)</li>
+              <li><span class="tick">£65</span> Emergency appointment</li>
+            </ul>
+            <p class="fine">Prices are examples; you’ll receive a personalised, written plan before treatment.</p>
+          </div>
+        </div>
+        <div>
+          <h2>FAQs</h2>
+          <div class="card"><strong>Do you offer finance?</strong><br><span class="muted">Yes, interest‑free options are available subject to status.</span></div>
+          <div class="card"><strong>Do you treat NHS patients?</strong><br><span class="muted">We’re a private clinic. We’ll gladly provide records for NHS referrals if needed.</span></div>
+          <div class="card"><strong>Are implants right for me?</strong><br><span class="muted">Book a free suitability check. We’ll assess bone, gum health and your goals.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team">
+      <div class="container">
+        <h2>Meet the team</h2>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Dr Firstname Lastname</h3>
+            <p class="muted">BDS (University) • GDC 000000 • Clinical lead in restorative and implant dentistry.</p>
+          </div>
+          <div class="card">
+            <h3>Dr Specialist Name</h3>
+            <p class="muted">Specialist Periodontist • GDC 000000 • Treats gum disease and implant aftercare.</p>
+          </div>
+          <div class="card">
+            <h3>Dental Therapist / Hygienist</h3>
+            <p class="muted">RDH • GDC 000000 • Gentle gum care and personalised home routines.</p>
+          </div>
+        </div>
+        <p class="fine" style="margin-top:10px">In line with GDC guidance, we display clinician qualifications and GDC numbers.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container grid-2">
+        <div>
+          <h2>Book now</h2>
+          <p class="muted">Choose a time or leave your details and we’ll get back to you. For urgent care, please call.</p>
+          <form action="https://formsubmit.co/YOUR_EMAIL" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <div class="cols">
+              <div>
+                <label for="name">Full name</label>
+                <input id="name" name="name" required />
+              </div>
+              <div>
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" required />
+              </div>
+            </div>
+            <div class="cols">
+              <div>
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" required />
+              </div>
+              <div>
+                <label for="service">Service</label>
+                <select id="service" name="service">
+                  <option>Dental Implants</option>
+                  <option>Restorative Dentistry</option>
+                  <option>Cosmetic Dentistry</option>
+                  <option>Periodontics</option>
+                  <option>Emergency</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <label for="msg">Message</label>
+              <textarea id="msg" name="message" rows="4" placeholder="Tell us what you need"></textarea>
+            </div>
+            <button class="btn primary" type="submit">Send enquiry</button>
+            <p class="fine">Submitting this form gives consent for us to contact you about your enquiry. We will never share your data without consent.</p>
+          </form>
+        </div>
+        <div>
+          <h2>Contact</h2>
+          <div class="card">
+            <p><strong>ASMILE Dental</strong><br/>123 Sample Street, Dundee DD1 1AA<br/>T: <a href="tel:+44-0000-000000">+44 (0)0000 000000</a><br/>E: <a href="mailto:hello@asmile.co.uk">hello@asmile.co.uk</a></p>
+            <p class="muted">Open Mon–Fri 9am–6pm • Emergency slots held daily</p>
+            <div class="panel">
+              <strong>Complaints</strong>
+              <p class="fine">If you are unhappy with any aspect of your care, please contact the practice manager at the address above. For private treatment you may also contact the Dental Complaints Service.</p>
+            </div>
+          </div>
+          <div class="card">
+            <strong>AI Receptionist (live chat)</strong>
+            <p class="muted">Your AI phone/chat agent script goes here:</p>
+            <pre style="white-space:pre-wrap;background:#f8fafc;border:1px dashed #e2e8f0;border-radius:10px;padding:10px">&lt;!-- Example embed --&gt;
+&lt;script defer src="https://YOUR_AGENT_SDK.js" data-key="PUBLIC_KEY"&gt;&lt;/script&gt;
+&lt;div id="assistant-widget" data-clinic="ASMILE" data-locale="en-GB"&gt;&lt;/div&gt;
+</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="sticky-footer">
+    <div class="container">
+      <div><strong>Need help now?</strong> Same‑day emergency appointments when available.</div>
+      <div class="cta-bar">
+        <a class="btn" href="tel:+44-0000-000000">Call</a>
+        <a class="btn cta" href="#contact">Book online</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <h3>ASMILE Dental</h3>
+        <p class="muted">Private dental clinic in Dundee. Implants, restorative & cosmetic dentistry, specialist periodontics and emergency care.</p>
+        <p class="fine">© <span id="yy"></span> ASMILE Dental. All rights reserved.</p>
+      </div>
+      <div>
+        <h3>Compliance</h3>
+        <ul class="list">
+          <li>Practice owner: Dr Firstname Lastname • GDC 000000</li>
+          <li>Specialists listed with GDC</li>
+          <li><a href="#">Privacy & Cookies</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Our Policies</h3>
+        <ul class="list">
+          <li>Complaints policy</li>
+          <li>Consent policy</li>
+          <li>Accessibility</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Simple Cookie Banner -->
+  <div id="cookie" class="cookie" role="dialog" aria-live="polite">
+    <strong>Cookies & privacy</strong>
+    <p class="muted">We use cookies to show you relevant treatment information and measure advertising effectiveness. Manage preferences or opt out any time.</p>
+    <div class="cta-bar">
+      <button class="btn" onclick="hideCookie()">Reject non‑essential</button>
+      <button class="btn cta" onclick="acceptCookie()">Accept all</button>
+      <a href="#" class="btn">Manage</a>
+    </div>
+  </div>
+
+  <script>
+    const yy=document.getElementById('yy'); yy.textContent=new Date().getFullYear();
+    const cookie=document.getElementById('cookie');
+    const seen=localStorage.getItem('cookieSeen');
+    if(!seen) cookie.classList.add('show');
+    function acceptCookie(){localStorage.setItem('cookieSeen','all');cookie.classList.remove('show')}
+    function hideCookie(){localStorage.setItem('cookieSeen','reject');cookie.classList.remove('show')}
+  </script>
+</body>
+</html>
